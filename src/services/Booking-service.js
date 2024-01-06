@@ -36,6 +36,15 @@ class BookingService {
             throw new ServiceError();
         }
     }
+
+    async updateBooking(flightId, data) {
+        try {
+            const response = await this.bookingRepository.update(flightId, data);
+            return response;
+        } catch (error) {
+            throw new ServiceError();
+        }
+    }
 }
 
 module.exports = BookingService;
