@@ -3,7 +3,8 @@ const express = require("express")
 const app = express();
 const apiRoutes = require("./routes/index")
 const db = require("./models/index")
-const {PORT} = require("./config/ServerConfig")
+const { PORT } = require("./config/ServerConfig");
+
 
 const setupAndStartServer = () => {
 
